@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_notification_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:text="@string/notofication_page_date_title"
+        android:fontFamily="@font/raleway_bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    TODO change include to recycle view-->
+    <include
+        android:id="@+id/notification_details_layout"
+        layout="@layout/list_item_notification_details"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notification_date"/>
+</LinearLayout>

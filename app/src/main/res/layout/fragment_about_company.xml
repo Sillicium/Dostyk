@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.profile.details.about_company.AboutCompanyFragment">
+
+    <include
+        android:id="@+id/base_page_title_view_layout"
+        layout="@layout/base_page_title_view"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="13dp"
+        android:background="@color/gray_background">
+
+
+        <TextView
+            android:id="@+id/tv_about_company_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:textSize="15sp"
+            android:text="@string/about_company_page_app_text_1"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/tv_about_company_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_medium"
+            android:textSize="15sp"
+            android:text="@string/about_company_page_app_text_2"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_about_company_text_1"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--    TODO change include to recycle view-->
+    <include
+        android:id="@+id/about_company_user_agreement"
+        layout="@layout/list_item_page_details"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include
+        android:id="@+id/about_company_offer"
+        layout="@layout/list_item_page_details"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include
+        android:id="@+id/about_company_privacy_policy"
+        layout="@layout/list_item_page_details"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

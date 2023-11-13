@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">dostyk</string>
+
+
+    <!--   Page Texes-->
+    <string name="user_cards">Мои карты</string>
+    <string name="user_doesnt_have_cards">У вас нет добавленных карт</string>
+
+    <string name="user_main_card">Основная карта</string>
+
+    <string name="payment_via_qr">Оплата QR</string>
+
+
+    <!--    Profile Page-->
+    <string name="user_name_example">Алдияр</string>
+    <string name="phone_number_example">+7 111 111 11 11</string>
+
+    <string name="notofication_page_title">Уведомления</string>
+    <string name="notofication_page_date_title">10 Октября</string>
+
+    <string name="order_history">История заказов</string>
+    <string name="user_data">Мои данные</string>
+    <string name="payment_methods">Способы оплаты</string>
+
+    <string name="support_service">Служба поддержки</string>
+    <string name="support_service_faq">FAQ</string>
+
+    <string name="about_company">О компании</string>
+
+
+    <!--    About Company-->
+    <string name="about_company_page_app_text_1">Dostyk - приложение, позволяющее получать бонусы за каждый заказ у наших партнеров ресторанов.</string>
+    <string name="about_company_page_app_text_2">Приложение Dostyk объединяет единую экосистему лояльности более 400 ресторанов.</string>
+
+    <string name="about_company_page_user_agreement">Пользовательское соглашение</string>
+
+    <string name="about_company_page_offer">Оферта</string>
+
+    <string name="about_company_page_privacy_policy">Политика конфиденциальности</string>
+
+
+    <!--    Bottom Navigation-->
+    <string name="bottom_navigation_home">Главная</string>
+    <string name="bottom_navigation_restaurants">Рестонары</string>
+    <string name="bottom_navigation_qr">QR</string>
+    <string name="bottom_navigation_history">История</string>
+    <string name="bottom_navigation_profile">Профиль</string>
+
+
+    <!--    Buttons Text-->
+    <string name="add_card">Добавить карту</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

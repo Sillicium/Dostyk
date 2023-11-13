@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gray_8dp_radius">
+
+    <ImageView
+        android:id="@+id/iv_notification_send_company"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_about_company_info"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_collect_bonus_count_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_collect_bonus_count" />
+
+    <TextView
+        android:id="@+id/tv_collect_bonus_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:text="@string/about_company"
+        android:fontFamily="@font/raleway_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toStartOf="@+id/iv_about_company_details"
+        app:layout_constraintStart_toEndOf="@+id/iv_notification_send_company"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_collect_bonus_count_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/raleway_bold"
+        android:maxLines="1"
+        android:paddingHorizontal="24dp"
+        android:text="@string/about_company"
+        android:textColor="@color/gray_txt"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_about_company_details"
+        app:layout_constraintStart_toEndOf="@+id/iv_notification_send_company"
+        app:layout_constraintTop_toBottomOf="@+id/tv_collect_bonus_count" />
+
+    <ImageView
+        android:id="@+id/iv_about_company_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_collect_bonus_count_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_collect_bonus_count" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

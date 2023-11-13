@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ProfilePageFragment">
+
+    <include
+        android:id="@+id/profile_page_title"
+        layout="@layout/profile_page_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/profile_page_details" />
+
+    <include
+        android:id="@+id/order_history_tab"
+        layout="@layout/list_item_page_details"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <include
+        android:id="@+id/user_data_tab"
+        layout="@layout/list_item_page_details"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp" />
+
+    <include
+        android:id="@+id/payment_method_tab"
+        layout="@layout/list_item_page_details"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp" />
+
+    <include
+        android:id="@+id/support_service_tab"
+        layout="@layout/list_item_page_details"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp" />
+
+    <include
+        android:id="@+id/support_service_faq_tab"
+        layout="@layout/list_item_page_details"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp" />
+
+    <include
+        android:id="@+id/about_company_tab"
+        layout="@layout/list_item_page_details"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp" />
+
+</LinearLayout>
