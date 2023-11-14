@@ -3,6 +3,8 @@ plugins {
     id("org.jetbrains.kotlin.android")
 
 
+    id ("kotlin-kapt")
+    id ("kotlin-parcelize")
     id ("androidx.navigation.safeargs.kotlin")
 }
 
@@ -60,4 +62,12 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
     implementation ("androidx.legacy:legacy-support-v4:1.0.0")
     implementation ("androidx.recyclerview:recyclerview:1.2.1")
+
+    // switch
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+
+    // qr scan
+    implementation ("com.google.android.gms:play-services-vision:20.1.3")
+
+    //generate qr https://www.geeksforgeeks.org/generate-qr-code-in-android-using-kotlin/
 }

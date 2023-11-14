@@ -30,4 +30,13 @@
     </style>
 
     <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+
+    <!--   ROUNDED BOTTOM SHEET-->
+    <style name="BaseSwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+
+        <item name="android:typeface">monospace</item>
+        <item name="android:background">@drawable/bg_gray_8dp_radius</item>
+    </style>
+
 </resources>
