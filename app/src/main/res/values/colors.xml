@@ -14,6 +14,7 @@
 
     <!--    Text color-->
     <color name="gray_txt">#8C8C8C</color>
+    <color name="green_txt">#8AB057</color>
     <color name="main_btn_txt">#1C3E3D</color>
 
     <color name="bg_main_button">#C4F586</color>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_restaurant_description_news_and_events_title"
+        style="@style/TextAppearance.FilterHeading2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant_description_news_and_events_title"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_restaurant_description_news_and_events_all"
+        app:layout_constraintEnd_toStartOf="@+id/tv_restaurant_description_news_and_events_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_restaurant_description_news_and_events_all"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.FilterHeading2"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textFontWeight="500"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/restaurant_description_news_and_events_all"
+        app:layout_constraintEnd_toStartOf="@+id/ic_view_all_news_and_events"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ic_view_all_news_and_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_right"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_restaurant_description_news_and_events_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_item_restaurant_details_news_and_events"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_restaurant_description_news_and_events_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

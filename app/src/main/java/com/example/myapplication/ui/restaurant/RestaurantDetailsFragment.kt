@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
-import com.example.myapplication.databinding.FragmentQrPageBinding
+import com.example.myapplication.databinding.FragmentRestaurantDetailsBinding
 import com.example.myapplication.databinding.FragmentRestaurantsPageBinding
 
-class RestaurantsPageFragment : BindingFragment<FragmentRestaurantsPageBinding>(
-    FragmentRestaurantsPageBinding::inflate
+class RestaurantDetailsFragment : BindingFragment<FragmentRestaurantDetailsBinding>(
+    FragmentRestaurantDetailsBinding::inflate
 ) {
 
     override fun onCreateView(
@@ -25,8 +25,12 @@ class RestaurantsPageFragment : BindingFragment<FragmentRestaurantsPageBinding>(
         return binding.root
     }
 
-    private fun setupFragment(){
+    private fun setupFragment() {
+        setupView()
 
+    }
+
+    private fun setupView() {
 
     }
 }

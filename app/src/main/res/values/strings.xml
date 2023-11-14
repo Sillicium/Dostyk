@@ -58,6 +58,20 @@
     <string name="card_holder_name">Имя владельца карты</string>
 
 
+    <!--    Restaurant Details page-->
+    <string name="restaurant_type_description">Бар</string>
+    <string name="restaurant_type_name">Alma Wine</string>
+    <string name="restaurant_type_bonuses">Бонусы</string>
+    <string name="restaurant_type_bonuses_count">1500</string>
+    <string name="restaurant_work_hours">10:00–22:30</string>
+    <string name="restaurant_address">ул. Достык 98</string>
+    <string name="restaurant_address_how_far">600м</string>
+    <string name="restaurant_description_title">Описание</string>
+    <string name="restaurant_description_text">Ресторан "Alma Wine" вобрал в себя лучшие традиции европейской, испанской и средиземноморской кухни. Уютная, доброжелательная атмосфера и достойный сервис - это основные преимущества ресторана.</string>
+    <string name="restaurant_description_news_and_events_title">Новости и акции</string>
+    <string name="restaurant_description_news_and_events_all">Все</string>
+    <string name="restaurant_description_news_and_events_text">Дегустация вин каждый вторник</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

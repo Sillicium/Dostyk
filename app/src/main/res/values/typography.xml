@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.Dostyk.Main" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/raleway_font</item>
+
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:gravity">start</item>
+
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.Dostyk.Heading4" parent="TextAppearance.Dostyk.Main">
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <!--    DIALOGS-->
+    <style name="TextAppearance.Merchant.DialogTitle" parent="TextAppearance.Dostyk.Heading4">
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextAppearance.DialogMessage" parent="TextAppearance.Dostyk.Heading4">
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--    Bottom Sheet-->
+
+    <style name="TextAppearance.FilterHeading1" parent="TextAppearance.Dostyk.Heading4">
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">-3dp</item>
+    </style>
+
+
+    <style name="TextAppearance.FilterHeading2" parent="TextAppearance.Dostyk.Main">
+        <item name="android:textFontWeight">600</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_txt</item>
+    </style>
+
+
+    <style name="TextAppearance.FilterHeading3" parent="TextAppearance.Dostyk.Main">
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray_txt</item>
+    </style>
+
+    <style name="TextAppearance.Pill" parent="TextAppearance.Dostyk.Main">
+        <item name="android:textFontWeight">400</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textSize">17sp</item>
+        <item name="fontStyle">normal</item>
+    </style>
+
+    <!--   GENERAL -->
+    <style name="TextAppearance.Dostyk.Body" parent="TextAppearance.Dostyk.Main">
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.MapTitle" parent="TextAppearance.Dostyk.Main">
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontStyle">normal</item>
+    </style>
+
+    <!--    TOOLBAR-->
+    <style name="TextAppearance.Merchant.Toolbar" parent="TextAppearance.Dostyk.Main">
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
