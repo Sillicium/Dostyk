@@ -41,8 +41,7 @@ class OrderHistoryFragment : BindingFragment<FragmentOrderHistoryBinding>(
 
         binding.basePageTitleViewLayout.btnBack
             .setOnClickListener {
-                val direction = OrderHistoryFragmentDirections.actionOrderHistoryFragmentToBottomProfile()
-                findNavController().navigate(direction)
+                findNavController().navigateUp()
             }
     }
 }

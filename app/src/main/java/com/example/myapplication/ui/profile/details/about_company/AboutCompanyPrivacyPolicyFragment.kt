@@ -40,8 +40,7 @@ class AboutCompanyPrivacyPolicyFragment : BindingFragment<FragmentAboutCompanyPr
     private fun setupButtons(){
         binding.basePageTitleViewLayout.btnBack
             .setOnClickListener {
-                val directions = AboutCompanyPrivacyPolicyFragmentDirections.actionAboutCompanyPrivacyPolicyFragmentToAboutCompanyFragment()
-                findNavController().navigate(directions)
+                findNavController().navigateUp()
             }
     }
 

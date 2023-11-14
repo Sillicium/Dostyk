@@ -36,12 +36,16 @@ class PaymentMethodFragment : BindingFragment<FragmentPaymentMethodBinding>(
         binding.basePageTitleViewLayout.tvNotificationPageTitle.setText(R.string.payment_methods)
     }
 
-    private fun setupButtons(){
+    private fun setupButtons() {
 
         binding.basePageTitleViewLayout.btnBack
             .setOnClickListener {
-                val direction = PaymentMethodFragmentDirections.actionPaymentMethodFragmentToBottomProfile()
-                findNavController().navigate(direction)
+                findNavController().navigateUp()
+            }
+
+        binding.btnAddCard
+            .setOnClickListener {
+                AddNewCardDialog().show(parentFragmentManager, AddNewCardDialog.TAG)
             }
     }
 }

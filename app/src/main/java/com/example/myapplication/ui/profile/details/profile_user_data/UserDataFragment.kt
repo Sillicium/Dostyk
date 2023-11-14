@@ -39,8 +39,7 @@ class UserDataFragment : BindingFragment<FragmentUserDataBinding>(
     private fun setupButtons(){
         binding.basePageTitleViewLayout.btnBack
             .setOnClickListener {
-                val directions = UserDataFragmentDirections.actionUserDataFragmentToBottomProfile()
-                findNavController().navigate(directions)
+                findNavController().navigateUp()
             }
     }
 }

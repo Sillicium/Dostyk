@@ -63,36 +63,24 @@
         android:name="com.example.myapplication.ui.profile.details.notification.NotificationPageFragment"
         android:label="fragment_notification_page"
         tools:layout="@layout/fragment_notification_page" >
-        <action
-            android:id="@+id/action_notificationPageFragment_to_bottom_profile"
-            app:destination="@id/bottom_profile" />
     </fragment>
     <fragment
         android:id="@+id/paymentMethodFragment"
         android:name="com.example.myapplication.ui.profile.details.profile_user_data.PaymentMethodFragment"
         android:label="fragment_payment_method"
         tools:layout="@layout/fragment_payment_method" >
-        <action
-            android:id="@+id/action_paymentMethodFragment_to_bottom_profile"
-            app:destination="@id/bottom_profile" />
     </fragment>
     <fragment
         android:id="@+id/orderHistoryFragment"
         android:name="com.example.myapplication.ui.profile.details.profile_user_data.OrderHistoryFragment"
         android:label="fragment_order_history"
         tools:layout="@layout/fragment_order_history" >
-        <action
-            android:id="@+id/action_orderHistoryFragment_to_bottom_profile"
-            app:destination="@id/bottom_profile" />
     </fragment>
     <fragment
         android:id="@+id/aboutCompanyFragment"
         android:name="com.example.myapplication.ui.profile.details.about_company.AboutCompanyFragment"
         android:label="fragment_about_company"
         tools:layout="@layout/fragment_about_company" >
-        <action
-            android:id="@+id/action_aboutCompanyFragment_to_bottom_profile"
-            app:destination="@id/bottom_profile" />
         <action
             android:id="@+id/action_aboutCompanyFragment_to_aboutCompanyOfferPageFragment"
             app:destination="@id/aboutCompanyOfferPageFragment" />
@@ -108,54 +96,36 @@
         android:name="com.example.myapplication.ui.profile.details.support.ServiceFaqPageFragment"
         android:label="fragment_service_faq_page"
         tools:layout="@layout/fragment_service_faq_page" >
-        <action
-            android:id="@+id/action_serviceFaqPageFragment_to_bottom_profile"
-            app:destination="@id/bottom_profile" />
     </fragment>
     <fragment
         android:id="@+id/serviceSupportFragment"
         android:name="com.example.myapplication.ui.profile.details.support.ServiceSupportFragment"
         android:label="fragment_service_support"
         tools:layout="@layout/fragment_service_support" >
-        <action
-            android:id="@+id/action_serviceSupportFragment_to_bottom_profile"
-            app:destination="@id/bottom_profile" />
     </fragment>
     <fragment
         android:id="@+id/userDataFragment"
         android:name="com.example.myapplication.ui.profile.details.profile_user_data.UserDataFragment"
         android:label="fragment_user_data"
         tools:layout="@layout/fragment_user_data" >
-        <action
-            android:id="@+id/action_userDataFragment_to_bottom_profile"
-            app:destination="@id/bottom_profile" />
     </fragment>
     <fragment
         android:id="@+id/aboutCompanyOfferPageFragment"
         android:name="com.example.myapplication.ui.profile.details.about_company.AboutCompanyOfferPageFragment"
         android:label="fragment_about_company_offer_page"
         tools:layout="@layout/fragment_about_company_offer_page" >
-        <action
-            android:id="@+id/action_aboutCompanyOfferPageFragment_to_aboutCompanyFragment"
-            app:destination="@id/aboutCompanyFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutCompanyPrivacyPolicyFragment"
         android:name="com.example.myapplication.ui.profile.details.about_company.AboutCompanyPrivacyPolicyFragment"
         android:label="fragment_about_company_privacy_policy"
         tools:layout="@layout/fragment_about_company_privacy_policy" >
-        <action
-            android:id="@+id/action_aboutCompanyPrivacyPolicyFragment_to_aboutCompanyFragment"
-            app:destination="@id/aboutCompanyFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutCompanyUserAgreementFragment"
         android:name="com.example.myapplication.ui.profile.details.about_company.AboutCompanyUserAgreementFragment"
         android:label="fragment_about_company_user_agreement"
         tools:layout="@layout/fragment_about_company_user_agreement" >
-        <action
-            android:id="@+id/action_aboutCompanyUserAgreementFragment_to_aboutCompanyFragment"
-            app:destination="@id/aboutCompanyFragment" />
     </fragment>
 
 </navigation>

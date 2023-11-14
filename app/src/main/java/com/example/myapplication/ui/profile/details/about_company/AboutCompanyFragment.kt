@@ -43,8 +43,7 @@ class AboutCompanyFragment :  BindingFragment<FragmentAboutCompanyBinding>(
     private fun setupButtons(){
         binding.basePageTitleViewLayout.btnBack
             .setOnClickListener {
-                val directions = AboutCompanyFragmentDirections.actionAboutCompanyFragmentToBottomProfile()
-                findNavController().navigate(directions)
+                findNavController().navigateUp()
             }
 
         binding.aboutCompanyOffer.tabLayout

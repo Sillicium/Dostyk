@@ -40,8 +40,7 @@ class ServiceFaqPageFragment : BindingFragment<FragmentServiceFaqPageBinding>(
     private fun setupButtons(){
         binding.basePageTitleViewLayout.btnBack
             .setOnClickListener {
-                val directions = ServiceFaqPageFragmentDirections.actionServiceFaqPageFragmentToBottomProfile()
-                findNavController().navigate(directions)
+                findNavController().navigateUp()
             }
     }
 

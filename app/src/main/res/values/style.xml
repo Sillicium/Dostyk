@@ -14,4 +14,20 @@
         <item name="android:textColor">@color/main_btn_txt</item>
         <item name="android:background">@drawable/bg_main_button</item>
     </style>
+
+
+    <!--   ROUNDED BOTTOM SHEET-->
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+
+        <item name="android:typeface">monospace</item>
+        <item name="android:background">@drawable/bg_gray_8dp_radius</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:typeface">monospace</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
 </resources>

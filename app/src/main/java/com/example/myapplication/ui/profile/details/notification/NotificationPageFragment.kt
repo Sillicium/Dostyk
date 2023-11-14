@@ -32,8 +32,7 @@ class NotificationPageFragment : BindingFragment<FragmentNotificationPageBinding
 
         binding.basePageTitleViewLayout.btnBack
             .setOnClickListener {
-                val direction = NotificationPageFragmentDirections.actionNotificationPageFragmentToBottomProfile()
-                findNavController().navigate(direction)
+                findNavController().navigateUp()
             }
     }
 

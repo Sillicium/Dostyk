@@ -39,8 +39,7 @@ class ServiceSupportFragment : BindingFragment<FragmentServiceSupportBinding>(
     private fun setupButtons(){
         binding.basePageTitleViewLayout.btnBack
             .setOnClickListener {
-                val directions = ServiceSupportFragmentDirections.actionServiceSupportFragmentToBottomProfile()
-                findNavController().navigate(directions)
+                findNavController().navigateUp()
             }
     }
 
