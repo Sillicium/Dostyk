@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_restaurant_description_news_and_events_title"
+        style="@style/TextAppearance.FilterHeading2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/history_payment_in_order"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_gray_8dp_radius"
+        app:layout_constraintTop_toBottomOf="@+id/tv_restaurant_description_news_and_events_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_bonus_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:text="@string/about_company"
+            android:fontFamily="@font/raleway_bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/tv_amount_bonuses"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_bonus_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/raleway_bold"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:text="@string/about_company"
+            android:textColor="@color/gray_txt"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_amount_bonuses"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bonus_title" />
+
+        <TextView
+            android:id="@+id/tv_amount_bonuses"
+            style="@style/TextAppearance.Dostyk.Heading4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:text="@string/restaurant_type_bonuses_count"
+            android:textFontWeight="600"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_bonus_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_bonus_title" />
+
+
+        <ImageView
+            android:id="@+id/iv_saved_card_type"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_saved_card_type"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bonus_description"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_card_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/raleway_semi_bold"
+            android:text="@string/about_company_page_user_agreement"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp"
+            android:foregroundGravity="center_vertical"
+            app:layout_constraintStart_toEndOf="@+id/iv_saved_card_type"
+            app:layout_constraintTop_toTopOf="@+id/iv_saved_card_type" />
+
+        <TextView
+            android:id="@+id/tv_amount_tenge"
+            style="@style/TextAppearance.Dostyk.Heading4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:text="@string/restaurant_type_bonuses_count"
+            android:textFontWeight="600"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_card_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_card_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

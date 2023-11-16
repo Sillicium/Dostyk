@@ -58,7 +58,7 @@
     <string name="card_holder_name">Имя владельца карты</string>
 
 
-    <!--    Restaurant Details page-->
+    <!--    Restaurant page-->
     <string name="restaurant_type_description">Бар</string>
     <string name="restaurant_type_name">Alma Wine</string>
     <string name="restaurant_type_bonuses">Бонусы</string>
@@ -72,6 +72,11 @@
     <string name="restaurant_description_news_and_events_all">Все</string>
     <string name="restaurant_description_news_and_events_text">Дегустация вин каждый вторник</string>
     <string name="restaurant_description_map_title">Карта</string>
+
+    <!--    History page-->
+    <string name="history_dishes_in_order">Блюда в заказе</string>
+    <string name="history_payment_in_order">Оплата</string>
+    <string name="history_bonus_in_order">Бонусы</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
