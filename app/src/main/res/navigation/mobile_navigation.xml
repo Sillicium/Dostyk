@@ -25,7 +25,11 @@
         android:id="@+id/bottom_qr"
         android:name="com.example.myapplication.ui.qr.QrPageFragment"
         android:label="fragment_qr_page"
-        tools:layout="@layout/fragment_qr_page" />
+        tools:layout="@layout/fragment_qr_page" >
+        <action
+            android:id="@+id/action_bottom_qr_to_paymentPageFragment"
+            app:destination="@id/paymentPageFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/bottom_history"
@@ -139,6 +143,15 @@
         <action
             android:id="@+id/action_restaurantDetailsFragment_to_bottom_restaurant"
             app:destination="@id/bottom_restaurant" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentPageFragment"
+        android:name="com.example.myapplication.ui.qr.PaymentPageFragment"
+        android:label="fragment_payment_page"
+        tools:layout="@layout/fragment_payment_page" >
+        <action
+            android:id="@+id/action_paymentPageFragment_to_bottom_qr"
+            app:destination="@id/bottom_qr" />
     </fragment>
 
 </navigation>

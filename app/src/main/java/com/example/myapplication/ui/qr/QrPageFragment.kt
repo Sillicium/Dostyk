@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import com.budiyev.android.codescanner.AutoFocusMode
 import com.budiyev.android.codescanner.CodeScanner
 import com.budiyev.android.codescanner.DecodeCallback
@@ -57,7 +58,7 @@ class QrPageFragment : BindingFragment<FragmentQrPageBinding>(
 
         codeScanner.decodeCallback = DecodeCallback {
             requireActivity().runOnUiThread {
-                Toast.makeText(requireContext(),"Scanned", Toast.LENGTH_SHORT).show()
+                setupNavigation()
             }
         }
 
@@ -77,6 +78,12 @@ class QrPageFragment : BindingFragment<FragmentQrPageBinding>(
     private fun allPermissionsGranted() = ContextCompat.checkSelfPermission(
         requireActivity().baseContext, Manifest.permission.CAMERA
     ) == PackageManager.PERMISSION_GRANTED
+
+
+    private fun setupNavigation(){
+        val directions = QrPageFragmentDirections.actionBottomQrToPaymentPageFragment()
+        findNavController().navigate(directions)
+    }
 
     companion object {
 

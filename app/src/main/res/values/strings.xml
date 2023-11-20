@@ -47,6 +47,7 @@
 
     <!--    Buttons Text-->
     <string name="add_card">Добавить карту</string>
+    <string name="btn_pay_text">Перейти к оплате</string>
     <string name="close">Закрыть</string>
 
 
