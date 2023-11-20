@@ -15,7 +15,11 @@
         android:id="@+id/bottom_restaurant"
         android:name="com.example.myapplication.ui.restaurant.RestaurantsPageFragment"
         android:label="fragment_restaurants_page"
-        tools:layout="@layout/fragment_restaurants_page" />
+        tools:layout="@layout/fragment_restaurants_page" >
+        <action
+            android:id="@+id/action_bottom_restaurant_to_restaurantDetailsFragment"
+            app:destination="@id/restaurantDetailsFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/bottom_qr"
@@ -126,6 +130,15 @@
         android:name="com.example.myapplication.ui.profile.details.about_company.AboutCompanyUserAgreementFragment"
         android:label="fragment_about_company_user_agreement"
         tools:layout="@layout/fragment_about_company_user_agreement" >
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDetailsFragment"
+        android:name="com.example.myapplication.ui.restaurant.details.RestaurantDetailsFragment"
+        android:label="fragment_restaurant_details"
+        tools:layout="@layout/fragment_restaurant_details" >
+        <action
+            android:id="@+id/action_restaurantDetailsFragment_to_bottom_restaurant"
+            app:destination="@id/bottom_restaurant" />
     </fragment>
 
 </navigation>

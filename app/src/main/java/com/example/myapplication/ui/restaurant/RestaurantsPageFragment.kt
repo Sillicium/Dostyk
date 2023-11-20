@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentQrPageBinding
@@ -27,6 +28,13 @@ class RestaurantsPageFragment : BindingFragment<FragmentRestaurantsPageBinding>(
 
     private fun setupFragment(){
 
+        setupBtn()
+    }
 
+    private fun setupBtn(){
+        binding.placeholder.setOnClickListener {
+            val directions = RestaurantsPageFragmentDirections.actionBottomRestaurantToRestaurantDetailsFragment()
+            findNavController().navigate(directions)
+        }
     }
 }
