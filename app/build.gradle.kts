@@ -66,8 +66,11 @@ dependencies {
     // switch
     implementation ("androidx.appcompat:appcompat:1.6.1")
 
-    // qr scan
-    implementation ("com.google.android.gms:play-services-vision:20.1.3")
+    //QR scanning
+    implementation ("com.google.mlkit:barcode-scanning:17.0.3")
+
+    //Camera for scanning
+    implementation ("com.budiyev.android:code-scanner:2.1.0")
 
     //generate qr https://www.geeksforgeeks.org/generate-qr-code-in-android-using-kotlin/
 }
