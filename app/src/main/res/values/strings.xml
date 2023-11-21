@@ -77,10 +77,15 @@
     <string name="history_dishes_in_order">Блюда в заказе</string>
     <string name="history_payment_in_order">Оплата</string>
     <string name="history_bonus_in_order">Бонусы</string>
+    <string name="history_details_page_title">Заказ 138</string>
 
     <!--    QR page-->
     <string name="qr_page_text">Наведите камеру на QR-код, чтобы оплатить</string>
     <string name="qr_page_title">Оплата через QR-код</string>
+    <string name="qr_page_details_page_bonus_cap_text">Бонусы к начислению</string>
+    <string name="qr_page_details_page_bonus_cap_count">+120 ₸</string>
+    <string name="qr_page_details_page_bill_text">Итого к оплате</string>
+    <string name="qr_page_details_page_bill_amount">26 653 ₸</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

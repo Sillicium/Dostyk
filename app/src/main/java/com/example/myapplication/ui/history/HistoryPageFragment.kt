@@ -5,17 +5,41 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
+import com.example.myapplication.databinding.FragmentHistoryPageBinding
+import com.example.myapplication.databinding.FragmentQrPageBinding
+import com.example.myapplication.ui.restaurant.RestaurantsPageFragmentDirections
 
-class HistoryPageFragment : Fragment() {
+class HistoryPageFragment : BindingFragment<FragmentHistoryPageBinding>(
+    FragmentHistoryPageBinding::inflate
+) {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_history_page, container, false)
+    ): View {
+        super.onCreateView(inflater, container, savedInstanceState)
+
+        setupFragment()
+
+        return binding.root
     }
 
+    private fun setupFragment(){
+
+        setupView()
+
+        setupBtn()
+    }
+
+    private fun setupView(){
+
+
+    }
+    private fun setupBtn(){
+
+    }
 
 }

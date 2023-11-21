@@ -19,22 +19,115 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_gray_8dp_radius"
-        app:layout_constraintTop_toBottomOf="@+id/tv_restaurant_description_news_and_events_title"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/tv_restaurant_description_news_and_events_title">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dishes_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:listitem="@layout/list_item_order_history_dishes"
-            tools:itemCount="3"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="3"
+            tools:listitem="@layout/list_item_order_history_dishes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/payment_bonus_cap_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/tv_bonus_cap"
+            style="@style/TextAppearance.FilterHeading1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:text="@string/qr_page_details_page_bonus_cap_text"
+            android:textAlignment="textStart"
+            android:textColor="@color/green_txt"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/TextAppearance.Dostyk.Heading4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:text="@string/qr_page_details_page_bonus_cap_count"
+            android:textColor="@color/green_txt"
+            android:textFontWeight="600"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_bonus_cap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_bonus_cap" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/order_bill_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_bonus_cap_layout">
+
+
+        <TextView
+            android:id="@+id/tv_order_bill_text"
+            style="@style/TextAppearance.FilterHeading1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:text="@string/qr_page_details_page_bill_text"
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_order_bill_amount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_order_bill_amount"
+            style="@style/TextAppearance.Dostyk.Heading4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:text="@string/qr_page_details_page_bill_amount"
+            android:textFontWeight="600"
+            android:textSize="15sp"
+            android:textColor="@color/gray_txt"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_order_bill_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_order_bill_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

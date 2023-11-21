@@ -1,14 +1,11 @@
 package com.example.myapplication.ui.restaurant
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
-import com.example.myapplication.R
-import com.example.myapplication.databinding.FragmentQrPageBinding
 import com.example.myapplication.databinding.FragmentRestaurantsPageBinding
 
 class RestaurantsPageFragment : BindingFragment<FragmentRestaurantsPageBinding>(

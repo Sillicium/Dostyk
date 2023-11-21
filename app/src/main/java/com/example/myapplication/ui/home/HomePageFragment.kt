@@ -10,7 +10,6 @@ import com.example.myapplication.R
 
 class HomePageFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

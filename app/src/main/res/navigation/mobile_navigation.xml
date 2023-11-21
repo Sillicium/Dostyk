@@ -139,19 +139,11 @@
         android:id="@+id/restaurantDetailsFragment"
         android:name="com.example.myapplication.ui.restaurant.details.RestaurantDetailsFragment"
         android:label="fragment_restaurant_details"
-        tools:layout="@layout/fragment_restaurant_details" >
-        <action
-            android:id="@+id/action_restaurantDetailsFragment_to_bottom_restaurant"
-            app:destination="@id/bottom_restaurant" />
-    </fragment>
+        tools:layout="@layout/fragment_restaurant_details" />
     <fragment
         android:id="@+id/paymentPageFragment"
         android:name="com.example.myapplication.ui.qr.PaymentPageFragment"
         android:label="fragment_payment_page"
-        tools:layout="@layout/fragment_payment_page" >
-        <action
-            android:id="@+id/action_paymentPageFragment_to_bottom_qr"
-            app:destination="@id/bottom_qr" />
-    </fragment>
+        tools:layout="@layout/fragment_payment_page" />
 
 </navigation>

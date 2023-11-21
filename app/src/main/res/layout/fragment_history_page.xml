@@ -21,13 +21,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <!--    TODO change include to recycle view-->
-    <include
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notification_details_layout"
-        layout="@layout/list_item_notification_details"
+        tools:itemCount="5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tv_order_history_page_title"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_history_page_title"
+        tools:listitem="@layout/list_item_notification_details" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

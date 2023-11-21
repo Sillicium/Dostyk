@@ -51,8 +51,6 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-    <!--    TODO change include to recycle view-->
     <include
         android:id="@+id/about_company_user_agreement"
         layout="@layout/list_item_page_details"

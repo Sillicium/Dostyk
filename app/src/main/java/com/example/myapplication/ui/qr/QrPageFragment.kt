@@ -19,6 +19,8 @@ import com.budiyev.android.codescanner.ScanMode
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentQrPageBinding
+import com.google.android.material.snackbar.Snackbar
+import java.lang.Exception
 
 
 class QrPageFragment : BindingFragment<FragmentQrPageBinding>(
@@ -81,8 +83,13 @@ class QrPageFragment : BindingFragment<FragmentQrPageBinding>(
 
 
     private fun setupNavigation(){
-        val directions = QrPageFragmentDirections.actionBottomQrToPaymentPageFragment()
-        findNavController().navigate(directions)
+        try {
+
+            val directions = QrPageFragmentDirections.actionBottomQrToPaymentPageFragment()
+            findNavController().navigate(directions)
+        }catch (e : Exception){
+            Snackbar.make(requireView(), "Что то пошло не так...", Snackbar.LENGTH_SHORT).show()
+        }
     }
 
     companion object {
