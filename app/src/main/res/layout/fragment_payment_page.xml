@@ -93,7 +93,7 @@
                 android:fontFamily="@font/raleway_bold"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="@string/btn_pay_text"
+                android:text="@string/btn_go_to_pay"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -17,7 +17,6 @@ import com.budiyev.android.codescanner.DecodeCallback
 import com.budiyev.android.codescanner.ErrorCallback
 import com.budiyev.android.codescanner.ScanMode
 import com.example.dostyk.utils.fragment_utils.BindingFragment
-import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentQrPageBinding
 import com.google.android.material.snackbar.Snackbar
 import java.lang.Exception

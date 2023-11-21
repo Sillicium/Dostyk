@@ -18,6 +18,8 @@
     <color name="main_btn_txt">#1C3E3D</color>
 
     <color name="bg_main_button">#C4F586</color>
+    <color name="bg_main_outline_button">#75A634</color>
+    <color name="bg_main_button_inactive">#EAEAEA</color>
     <color name="bg_dark_button">#2B2B2E</color>
 
 </resources>

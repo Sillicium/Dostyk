@@ -47,8 +47,9 @@
 
     <!--    Buttons Text-->
     <string name="add_card">Добавить карту</string>
-    <string name="btn_pay_text">Перейти к оплате</string>
+    <string name="btn_go_to_pay">Перейти к оплате</string>
     <string name="close">Закрыть</string>
+    <string name="btn_pay">Оплатить</string>
 
 
     <!--    Add Card Bottom sheet-->
@@ -86,6 +87,7 @@
     <string name="qr_page_details_page_bonus_cap_count">+120 ₸</string>
     <string name="qr_page_details_page_bill_text">Итого к оплате</string>
     <string name="qr_page_details_page_bill_amount">26 653 ₸</string>
+    <string name="qr_page_choose_payment_method_dialog_title">Выберите способ оплаты</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -16,6 +16,24 @@
     </style>
 
 
+    <style name="MainButtonInactive" parent="BaseButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bg_main_button_inactive</item>
+    </style>
+
+
+    <style name="ButtonOutline" parent="BaseButton">
+        <item name="android:textColor">@color/bg_main_outline_button</item>
+        <item name="android:background">@drawable/bg_outline_16_dp</item>
+    </style>
+
+
+    <style name="ButtonSolidColorAndOutline" parent="BaseButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/bg_solid_gray_outline_green_8_radius</item>
+    </style>
+
+
     <style name="DarkButton" parent="BaseButton">
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/bg_dark_button</item>
