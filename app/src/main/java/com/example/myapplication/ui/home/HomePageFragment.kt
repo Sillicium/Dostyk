@@ -5,17 +5,39 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
+import com.example.myapplication.databinding.FragmentHistoryPageBinding
+import com.example.myapplication.databinding.FragmentHomePageBinding
 
 
-class HomePageFragment : Fragment() {
+class HomePageFragment : BindingFragment<FragmentHomePageBinding>(
+    FragmentHomePageBinding::inflate
+) {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_page, container, false)
+    ): View {
+        super.onCreateView(inflater, container, savedInstanceState)
+
+        setupFragment()
+
+        return binding.root
     }
 
+    private fun setupFragment(){
+
+        setupView()
+
+        setupBtn()
+    }
+
+    private fun setupView(){
+
+
+    }
+    private fun setupBtn(){
+
+    }
 }
