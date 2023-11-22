@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg_dialog"
+    android:paddingBottom="28dp"
     tools:context=".ui.qr.dialog.ConfirmPaymentDialogFragment">
 
 
@@ -44,7 +45,7 @@
         app:layout_constraintTop_toTopOf="@+id/iv_cancel_icon" />
 
     <include
-        android:id="@+id/about_company_tab"
+        android:id="@+id/choose_payment_method_tab"
         layout="@layout/list_item_page_details"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -61,7 +62,7 @@
         android:visibility="visible"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_company_tab">
+        app:layout_constraintTop_toBottomOf="@+id/choose_payment_method_tab">
 
         <TextView
             android:id="@+id/tv_bonus_cap"
@@ -153,11 +154,14 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="15dp"
         android:layout_marginVertical="16dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/raleway_bold"
+        app:layout_constraintVertical_bias="0"
         android:gravity="center"
         android:padding="16dp"
         android:text="@string/btn_pay"
-        android:layout_marginTop="16dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/order_bill_layout" />

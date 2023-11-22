@@ -80,7 +80,7 @@
             android:layout_height="32dp"
             android:layout_marginTop="16dp"
             android:layout_marginStart="24dp"
-            android:src="@drawable/ic_saved_card_type"
+            android:src="@drawable/ic_visa"
             app:layout_constraintTop_toBottomOf="@+id/tv_bonus_description"
             app:layout_constraintStart_toStartOf="parent" />
 

@@ -50,6 +50,8 @@
     <string name="btn_go_to_pay">Перейти к оплате</string>
     <string name="close">Закрыть</string>
     <string name="btn_pay">Оплатить</string>
+    <string name="btn_g_pay">Google pay</string>
+    <string name="btn_continue">Продолжить</string>
 
 
     <!--    Add Card Bottom sheet-->
@@ -62,10 +64,12 @@
     <!--    Restaurant page-->
     <string name="restaurant_type_description">Бар</string>
     <string name="restaurant_type_name">Alma Wine</string>
+    <string name="restaurant_description">#138 · Заказ от 23 августа, 17:14</string>
     <string name="restaurant_type_bonuses">Бонусы</string>
     <string name="restaurant_type_bonuses_count">1500</string>
     <string name="restaurant_work_hours">10:00–22:30</string>
-    <string name="restaurant_address">ул. Достык 98</string>
+    <string name="restaurant_address_title">ул. Достык 98</string>
+    <string name="restaurant_address_text">ул. Достык 98</string>
     <string name="restaurant_address_how_far">600м</string>
     <string name="restaurant_description_title">Описание</string>
     <string name="restaurant_description_text">Ресторан "Alma Wine" вобрал в себя лучшие традиции европейской, испанской и средиземноморской кухни. Уютная, доброжелательная атмосфера и достойный сервис - это основные преимущества ресторана.</string>
@@ -88,6 +92,8 @@
     <string name="qr_page_details_page_bill_text">Итого к оплате</string>
     <string name="qr_page_details_page_bill_amount">26 653 ₸</string>
     <string name="qr_page_choose_payment_method_dialog_title">Выберите способ оплаты</string>
+    <string name="payment_result_success_text">Оплата прошла успешно</string>
+    <string name="payment_result_failure_text">Произошла ошибка. Повторите попытку</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

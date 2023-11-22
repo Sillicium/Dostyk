@@ -34,6 +34,10 @@ class QrPageFragment : BindingFragment<FragmentQrPageBinding>(
 
         setupScanner()
 
+        binding.scannerView.isFlashButtonVisible = false
+
+        binding.scannerView.isAutoFocusButtonVisible = false
+
         return binding.root
     }
 

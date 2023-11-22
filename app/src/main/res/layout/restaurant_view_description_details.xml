@@ -120,7 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="3dp"
-        android:text="@string/restaurant_address"
+        android:text="@string/restaurant_address_title"
         android:textFontWeight="600"
         app:layout_constraintBottom_toBottomOf="@+id/ic_map"
         app:layout_constraintEnd_toStartOf="@+id/tv_restaurant_address_how_far"

@@ -33,6 +33,12 @@ class PaymentHistoryDetailsFragment : BindingFragment<FragmentPaymentHistoryDeta
     private fun setupView(){
         binding.basePageTitleViewLayout.tvNotificationPageTitle.setText(R.string.history_details_page_title)
 
+        binding.tvCompanyAddressOrderHistoryLayout.ivAboutCompanyDetails.visibility = View.GONE
+        binding.tvCompanyAddressOrderHistoryLayout.tvTitle.setText(R.string.restaurant_address_title)
+        binding.tvCompanyAddressOrderHistoryLayout.tvDescription.setText(R.string.restaurant_address_text)
+
+        binding.tvCompanyNameOrderHistoryPage.setText(R.string.restaurant_type_name)
+        binding.tvCompanyDescriptionOrderHistoryPage.setText(R.string.restaurant_description)
     }
 
     private fun setupBtn(){
