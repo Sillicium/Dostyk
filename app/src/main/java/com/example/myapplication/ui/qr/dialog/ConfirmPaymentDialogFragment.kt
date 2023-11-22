@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentConfirmPaymentDialogBinding
 import com.example.myapplication.ui.qr.PaymentPageFragmentDirections
+import com.example.myapplication.ui.qr.dialog.ChoosePaymentMethodDialogFragment.Companion.changeBtnColor
 import com.example.myapplication.utils.fragment_utils.BaseBottomSheetDialog
 
 class ConfirmPaymentDialogFragment : BaseBottomSheetDialog<FragmentConfirmPaymentDialogBinding>(
@@ -19,22 +21,32 @@ class ConfirmPaymentDialogFragment : BaseBottomSheetDialog<FragmentConfirmPaymen
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
 
-        setupFragment()
-
+        setupView()
+        setupBtn()
         return binding.root
     }
 
-    private fun setupFragment(){
-        setupView()
 
-        setupBtn()
+    override fun onResume() {
+        super.onResume()
+        binding.btnPay.invalidate()
     }
 
-    private fun setupView(){
 
+    private fun setupView(){
+        // TODO need redraw a btn (fast solution reopen this dialog)
+        if (changeBtnColor){
+            binding.btnPay.setBackgroundResource(R.drawable.bg_main_button)
+        }else{
+            binding.btnPay.setBackgroundResource(R.drawable.bg_main_button_inactive)
+        }
     }
 
     private fun setupBtn(){
+        binding.ivCancelIcon.setOnClickListener {
+            this.dismiss()
+        }
+
         binding.choosePaymentMethodTab.tabLayout
             .setOnClickListener {
                 ChoosePaymentMethodDialogFragment().show(

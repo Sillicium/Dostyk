@@ -58,11 +58,15 @@ class ChoosePaymentMethodDialogFragment : BaseBottomSheetDialog<FragmentChoosePa
         }
 
         binding.btnContinue.setOnClickListener {
+            changeBtnColor = true
             this.dismiss()
         }
     }
 
     companion object {
+
+        var changeBtnColor: Boolean = false
+
         const val TAG = "ChoosePaymentMethodDialog"
     }
 }

@@ -32,13 +32,18 @@ class QrPageFragment : BindingFragment<FragmentQrPageBinding>(
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
 
-        setupScanner()
+
 
         binding.scannerView.isFlashButtonVisible = false
 
         binding.scannerView.isAutoFocusButtonVisible = false
 
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setupScanner()
     }
 
     private fun setupScanner(){

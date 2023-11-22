@@ -9,6 +9,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentPaymentResultBinding
+import com.example.myapplication.ui.qr.dialog.ChoosePaymentMethodDialogFragment
+import com.example.myapplication.ui.qr.dialog.ChoosePaymentMethodDialogFragment.Companion.changeBtnColor
 
 
 class PaymentResultFragment : BindingFragment<FragmentPaymentResultBinding>(
@@ -21,6 +23,8 @@ class PaymentResultFragment : BindingFragment<FragmentPaymentResultBinding>(
     ): View {
 
         super.onCreateView(inflater, container, savedInstanceState)
+
+        changeBtnColor = false
 
         setupFragment()
 
