@@ -60,6 +60,10 @@ class ChoosePaymentMethodDialogFragment : BaseBottomSheetDialog<FragmentChoosePa
         binding.btnContinue.setOnClickListener {
             changeBtnColor = true
             this.dismiss()
+            ConfirmPaymentDialogFragment().show(
+                parentFragmentManager,
+                ConfirmPaymentDialogFragment.TAG
+            )
         }
     }
 

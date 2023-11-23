@@ -72,5 +72,8 @@ dependencies {
     //Camera for scanning
     implementation ("com.budiyev.android:code-scanner:2.1.0")
 
+    //Swipe-Refresh
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
     //generate qr https://www.geeksforgeeks.org/generate-qr-code-in-android-using-kotlin/
 }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentConfirmPaymentDialogBinding
@@ -26,19 +27,11 @@ class ConfirmPaymentDialogFragment : BaseBottomSheetDialog<FragmentConfirmPaymen
         return binding.root
     }
 
-
-    override fun onResume() {
-        super.onResume()
-        binding.btnPay.invalidate()
-    }
-
-
     private fun setupView(){
-        // TODO need redraw a btn (fast solution reopen this dialog)
-        if (changeBtnColor){
-            binding.btnPay.setBackgroundResource(R.drawable.bg_main_button)
-        }else{
-            binding.btnPay.setBackgroundResource(R.drawable.bg_main_button_inactive)
+        when (changeBtnColor){
+            true ->binding.btnPay.setBackgroundResource(R.drawable.bg_main_button)
+
+            else -> {binding.btnPay.setBackgroundResource(R.drawable.bg_main_button_inactive)}
         }
     }
 
@@ -49,6 +42,7 @@ class ConfirmPaymentDialogFragment : BaseBottomSheetDialog<FragmentConfirmPaymen
 
         binding.choosePaymentMethodTab.tabLayout
             .setOnClickListener {
+                this.dismiss()
                 ChoosePaymentMethodDialogFragment().show(
                     parentFragmentManager,
                     ChoosePaymentMethodDialogFragment.TAG
