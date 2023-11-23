@@ -95,6 +95,12 @@
     <string name="payment_result_success_text">Оплата прошла успешно</string>
     <string name="payment_result_failure_text">Произошла ошибка. Повторите попытку</string>
 
+    <!--    Home page-->
+    <string name="home_page_see_all">Показать все</string>
+    <string name="home_page_top_brands_title">Топовые бренды</string>
+    <string name="home_page_new_places_title">Новые заведения</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
