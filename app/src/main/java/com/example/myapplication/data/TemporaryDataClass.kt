@@ -1,16 +1,16 @@
 package com.example.myapplication.data
 
-data class TemporaryDataClassText(
-    val title: Int
+data class TemporaryDataClassOneElement(
+    val first: Int
 )
 
-data class TemporaryDataClassTextAndIcon(
-    val icon: Int,
-    val title: Int,
+data class TemporaryDataClassTwoElement(
+    val first: Int,
+    val second: Int,
 )
 
-data class TemporaryDataClassTextDescriptionAndIcon(
-    val icon: Int,
-    val title: Int,
-    val description: Int
+data class TemporaryDataClassThreeElement(
+    val first: Int,
+    val second: Int,
+    val third: Int
 )
