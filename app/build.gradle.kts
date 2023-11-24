@@ -75,5 +75,11 @@ dependencies {
     //Swipe-Refresh
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 
+    // retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
+    implementation ("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
     //generate qr https://www.geeksforgeeks.org/generate-qr-code-in-android-using-kotlin/
 }
