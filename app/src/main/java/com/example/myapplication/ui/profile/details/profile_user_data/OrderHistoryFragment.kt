@@ -8,6 +8,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentOrderHistoryBinding
+import com.example.myapplication.ui.history.HistoryPageFragment
+import com.example.myapplication.ui.history.PaymentHistoryAdapter
 
 
 class OrderHistoryFragment : BindingFragment<FragmentOrderHistoryBinding>(
@@ -35,6 +37,12 @@ class OrderHistoryFragment : BindingFragment<FragmentOrderHistoryBinding>(
 
     private fun setupView(){
         binding.basePageTitleViewLayout.tvNotificationPageTitle.setText(R.string.order_history)
+
+        val historyAdapter = PaymentHistoryAdapter(requireContext()).apply {
+            setItems(listOf(HistoryPageFragment().threeElement) )
+        }
+
+        binding.paymentHistoryList.adapter = historyAdapter
     }
 
     private fun setupButtons(){

@@ -14,3 +14,8 @@ data class TemporaryDataClassThreeElement(
     val second: Int,
     val third: Int
 )
+
+data class TemporaryDataClassWithList(
+    val first: Int,
+    val second: List<TemporaryDataClassThreeElement>,
+)

@@ -19,7 +19,7 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_item_notification_view_layout"
+        android:id="@+id/list_item_notification_view_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintVertical_bias="0"
@@ -28,6 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/base_page_title_view_layout"
         tools:itemCount="1"
+        android:paddingBottom="80dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/list_item_notification_view" />
 

@@ -41,7 +41,7 @@ class HistoryPageFragment : BindingFragment<FragmentHistoryPageBinding>(
 
     var index = 0
 
-    private val threeElement = TemporaryDataClassThreeElement(OneElementAdaptersData[index],
+    open val threeElement = TemporaryDataClassThreeElement(OneElementAdaptersData[index],
         SecondElementAdaptersData[index],
         ThirdElementAdaptersData[index])
 
