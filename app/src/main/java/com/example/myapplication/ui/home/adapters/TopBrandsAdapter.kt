@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.history
+package com.example.myapplication.ui.home.adapters
 
 import android.content.Context
 import android.view.LayoutInflater

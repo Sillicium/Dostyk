@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
-        android:id="@+id/iv_top_brand"
+        android:id="@+id/iv_new_places"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/bg_elipse"
@@ -15,15 +15,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_top_brand"
+        android:id="@+id/tv_new_places"
         android:layout_width="0dp"
         android:layout_height="20dp"
         android:text="sfdgd"
         style="@style/TextAppearance.DialogMessage"
         android:textColor="@color/black"
         android:ellipsize="end"
-        app:layout_constraintEnd_toEndOf="@+id/iv_top_brand"
-        app:layout_constraintStart_toStartOf="@+id/iv_top_brand"
-        app:layout_constraintTop_toBottomOf="@+id/iv_top_brand" />
+        app:layout_constraintEnd_toEndOf="@+id/iv_new_places"
+        app:layout_constraintStart_toStartOf="@+id/iv_new_places"
+        app:layout_constraintTop_toBottomOf="@+id/iv_new_places" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
