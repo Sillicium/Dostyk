@@ -34,7 +34,7 @@ class HomePageFragment : BindingFragment<FragmentHomePageBinding>(
     }
 
     private fun setupView(){
-
+        binding.fragmentTopBarLayout.searchInputLayout.isHintEnabled = false
 
     }
     private fun setupBtn(){
