@@ -2,6 +2,22 @@
     <string name="app_name">dostyk</string>
 
 
+    <!--    Bottom Navigation-->
+    <string name="bottom_navigation_home">Главная</string>
+    <string name="bottom_navigation_restaurants">Рестонары</string>
+    <string name="bottom_navigation_qr">QR</string>
+    <string name="bottom_navigation_history">История</string>
+    <string name="bottom_navigation_profile">Профиль</string>
+
+
+    <!--    Buttons Text-->
+    <string name="add_card">Добавить карту</string>
+    <string name="btn_go_to_pay">Перейти к оплате</string>
+    <string name="close">Закрыть</string>
+    <string name="btn_pay">Оплатить</string>
+    <string name="btn_g_pay">Google pay</string>
+    <string name="btn_continue">Продолжить</string>
+
     <!--   Page Texts-->
     <string name="user_cards">Мои карты</string>
     <string name="user_doesnt_have_cards">У вас нет добавленных карт</string>
@@ -18,7 +34,9 @@
 
     <string name="order_history">История заказов</string>
     <string name="user_data">Мои данные</string>
+
     <string name="payment_methods">Способы оплаты</string>
+    <string name="user_dont_have_cards">У вас нет сохраненной карты</string>
 
     <string name="support_service">Служба поддержки</string>
     <string name="support_service_faq">FAQ</string>
@@ -36,22 +54,6 @@
 
     <string name="about_company_page_privacy_policy">Политика конфиденциальности</string>
 
-
-    <!--    Bottom Navigation-->
-    <string name="bottom_navigation_home">Главная</string>
-    <string name="bottom_navigation_restaurants">Рестонары</string>
-    <string name="bottom_navigation_qr">QR</string>
-    <string name="bottom_navigation_history">История</string>
-    <string name="bottom_navigation_profile">Профиль</string>
-
-
-    <!--    Buttons Text-->
-    <string name="add_card">Добавить карту</string>
-    <string name="btn_go_to_pay">Перейти к оплате</string>
-    <string name="close">Закрыть</string>
-    <string name="btn_pay">Оплатить</string>
-    <string name="btn_g_pay">Google pay</string>
-    <string name="btn_continue">Продолжить</string>
 
 
     <!--    Add Card Bottom sheet-->
