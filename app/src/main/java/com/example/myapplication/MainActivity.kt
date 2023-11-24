@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.myapplication.ui.history.HistoryPageFragment
 import com.example.myapplication.ui.home.HomePageFragment
 import com.example.myapplication.ui.profile.ProfilePageFragment
