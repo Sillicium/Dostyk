@@ -65,6 +65,8 @@ class HistoryPageFragment : BindingFragment<FragmentHistoryPageBinding>(
 
     private fun setupView(){
 
+        binding.basePageTitleViewLayout.tvNotificationPageTitle.setText(R.string.order_history)
+
         val historyAdapter = PaymentHistoryAdapter(requireContext()).apply {
             setItems(listOf(threeElement) )
         }

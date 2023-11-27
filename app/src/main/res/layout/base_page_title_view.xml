@@ -11,6 +11,7 @@
         android:src="@drawable/ic_arrow_left"
         android:layout_marginStart="32dp"
         android:paddingTop="8dp"
+        android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/tv_notification_page_title"
         app:layout_constraintTop_toTopOf="@+id/tv_notification_page_title"/>

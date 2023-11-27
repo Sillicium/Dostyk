@@ -76,6 +76,7 @@
     <string name="restaurant_description_title">Описание</string>
     <string name="restaurant_description_text">Ресторан "Alma Wine" вобрал в себя лучшие традиции европейской, испанской и средиземноморской кухни. Уютная, доброжелательная атмосфера и достойный сервис - это основные преимущества ресторана.</string>
     <string name="restaurant_description_news_and_events_title">Новости и акции</string>
+    <string name="restaurant_description_mega_events_title">Мега акция</string>
     <string name="restaurant_description_news_and_events_all">Все</string>
     <string name="restaurant_description_news_and_events_text">Дегустация вин каждый вторник</string>
     <string name="restaurant_description_map_title">Карта</string>

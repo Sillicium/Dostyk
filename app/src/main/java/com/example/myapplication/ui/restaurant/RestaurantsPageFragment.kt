@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.databinding.FragmentRestaurantsPageBinding
+import com.example.myapplication.ui.home.HomePageFragment
+import com.example.myapplication.ui.restaurant.adapter.PartRestaurantsNewsAdapter
 
 class RestaurantsPageFragment : BindingFragment<FragmentRestaurantsPageBinding>(
     FragmentRestaurantsPageBinding::inflate
@@ -25,7 +27,13 @@ class RestaurantsPageFragment : BindingFragment<FragmentRestaurantsPageBinding>(
 
     private fun setupFragment(){
 
+        setupView()
+
         setupBtn()
+    }
+
+    private fun setupView(){
+
     }
 
     private fun setupBtn(){

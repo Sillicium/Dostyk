@@ -29,7 +29,7 @@ class HomePageFragment : BindingFragment<FragmentHomePageBinding>(
 
     private val oneElement = TemporaryDataClassOneElement(OneElementAdaptersData[4])
 
-    private val TwoElementAdaptersData = listOf(
+     val TwoElementAdaptersData = listOf(
         R.drawable.place_holder_image to R.string.about_company,
         R.drawable.place_holder_image to R.string.about_company,
         R.drawable.place_holder_image to R.string.about_company,

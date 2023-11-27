@@ -139,7 +139,14 @@
         android:id="@+id/restaurantDetailsFragment"
         android:name="com.example.myapplication.ui.restaurant.details.RestaurantDetailsFragment"
         android:label="fragment_restaurant_details"
-        tools:layout="@layout/fragment_restaurant_details" />
+        tools:layout="@layout/fragment_restaurant_details" >
+        <action
+            android:id="@+id/action_restaurantDetailsFragment_to_restaurantNewsAndEventsFragment"
+            app:destination="@id/restaurantNewsAndEventsFragment" />
+        <action
+            android:id="@+id/action_restaurantDetailsFragment_to_restaurantSuperEventFragment"
+            app:destination="@id/restaurantSuperEventFragment" />
+    </fragment>
     <fragment
         android:id="@+id/paymentPageFragment"
         android:name="com.example.myapplication.ui.qr.PaymentPageFragment"
@@ -149,16 +156,6 @@
             android:id="@+id/action_paymentPageFragment_to_paymentResultFragment"
             app:destination="@id/paymentResultFragment" />
     </fragment>
-    <dialog
-        android:id="@+id/confirmPaymentDialogFragment"
-        android:name="com.example.myapplication.ui.qr.dialog.ConfirmPaymentDialogFragment"
-        android:label="fragment_confirm_payment_dialog"
-        tools:layout="@layout/fragment_confirm_payment_dialog" />
-    <fragment
-        android:id="@+id/choosePaymentMethodDialogFragment"
-        android:name="com.example.myapplication.ui.qr.dialog.ChoosePaymentMethodDialogFragment"
-        android:label="fragment_choose_payment_method_dialog"
-        tools:layout="@layout/fragment_choose_payment_method_dialog" />
     <fragment
         android:id="@+id/paymentResultFragment"
         android:name="com.example.myapplication.ui.qr.PaymentResultFragment"
@@ -167,6 +164,20 @@
         <action
             android:id="@+id/action_paymentResultFragment_to_bottom_qr"
             app:destination="@id/bottom_qr" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantSuperEventFragment"
+        android:name="com.example.myapplication.ui.restaurant.details.RestaurantSuperEventFragment"
+        android:label="fragment_restaurant_super_event"
+        tools:layout="@layout/fragment_restaurant_super_event" />
+    <fragment
+        android:id="@+id/restaurantNewsAndEventsFragment"
+        android:name="com.example.myapplication.ui.restaurant.details.RestaurantNewsAndEventsFragment"
+        android:label="fragment_restaurant_news_and_events"
+        tools:layout="@layout/fragment_restaurant_news_and_events" >
+        <action
+            android:id="@+id/action_restaurantNewsAndEventsFragment_to_restaurantSuperEventFragment"
+            app:destination="@id/restaurantSuperEventFragment" />
     </fragment>
 
 </navigation>
