@@ -13,7 +13,9 @@ import com.example.myapplication.ui.profile.ProfilePageFragment
 import com.example.myapplication.ui.qr.QrPageFragment
 import com.example.myapplication.ui.restaurant.RestaurantsPageFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var bottomNavigationView: BottomNavigationView

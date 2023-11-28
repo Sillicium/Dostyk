@@ -19,3 +19,13 @@ data class TemporaryDataClassWithList(
     val first: Int,
     val second: List<TemporaryDataClassThreeElement>,
 )
+
+data class Movie(
+    val id: String,
+    val title: String,
+    val year: String,
+    val image: String,
+    val imDbRating: String
+)
+
+data class MovieResponse(val items: List<Movie>, val errorMessage: String)

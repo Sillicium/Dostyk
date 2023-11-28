@@ -6,6 +6,10 @@ plugins {
     id ("kotlin-kapt")
     id ("kotlin-parcelize")
     id ("androidx.navigation.safeargs.kotlin")
+
+    id ("com.google.dagger.hilt.android")
+
+    id ("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
@@ -29,6 +33,13 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+
+        debug {
+            applicationIdSuffix = ".dev"
+
+            isDebuggable = true
+
         }
     }
     compileOptions {
@@ -80,6 +91,11 @@ dependencies {
     implementation ("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
     implementation ("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //hilt
+    implementation ("com.google.dagger:hilt-android:2.46.1")
+    annotationProcessor ("com.google.dagger:hilt-compiler:2.46.1")
+    kapt ("com.google.dagger:hilt-compiler:2.46.1")
 
     //generate qr https://www.geeksforgeeks.org/generate-qr-code-in-android-using-kotlin/
 }
