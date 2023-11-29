@@ -1,5 +1,7 @@
 package com.example.myapplication.data
 
+import com.google.gson.annotations.SerializedName
+
 data class TemporaryDataClassOneElement(
     val first: Int
 )
@@ -29,3 +31,10 @@ data class Movie(
 )
 
 data class MovieResponse(val items: List<Movie>, val errorMessage: String)
+
+data class SessionData(
+    @SerializedName("access_token"  ) var accessToken  : String,
+    @SerializedName("refresh_token" ) val refreshToken : String,
+    @SerializedName("expires_at"    ) val expiresAt    : Int,
+    @SerializedName("ttl"           ) val ttl          : Int
+)
