@@ -1,4 +1,4 @@
-package com.example.myapplication.network.service
+package com.example.myapplication.network.apiService
 
 import com.example.myapplication.data.Movie
 import com.example.myapplication.data.MovieResponse

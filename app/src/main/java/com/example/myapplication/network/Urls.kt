@@ -6,7 +6,7 @@ enum class BuildTypes{
     debug,  release
 }
 
-const val TEST_URL = BuildConfig.TEST_APP_BASE_URL
+//const val TEST_URL = BuildConfig.TEST_APP_BASE_URL
 
 
 

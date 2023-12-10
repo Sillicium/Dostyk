@@ -2,7 +2,7 @@ package com.example.myapplication.network.repo
 
 import com.example.myapplication.network.NetworkResult
 import com.example.myapplication.network.handleRequest
-import com.example.myapplication.network.service.TestApiService
+import com.example.myapplication.network.apiService.TestApiService
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
