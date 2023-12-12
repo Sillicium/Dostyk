@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/bottom_history"
-        android:name="com.example.myapplication.ui.history.HistoryPageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.history.HistoryPageFragment"
         android:label="fragment_history_page"
         tools:layout="@layout/fragment_history_page" />
 

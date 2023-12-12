@@ -1,3 +1,5 @@
+import com.android.tools.r8.internal.QA
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -62,7 +64,6 @@ dependencies {
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.datastore:datastore-core:1.0.0")
-    implementation("androidx.datastore:datastore-preferences-core:1.0.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
@@ -98,6 +99,10 @@ dependencies {
     implementation ("com.google.dagger:hilt-android:2.46.1")
     annotationProcessor ("com.google.dagger:hilt-compiler:2.46.1")
     kapt ("com.google.dagger:hilt-compiler:2.46.1")
+
+
+//    DataStore - Shared-Pref replacer
+    implementation ("androidx.datastore:datastore-preferences:1.0.0")
 
     //generate qr https://www.geeksforgeeks.org/generate-qr-code-in-android-using-kotlin/
 }

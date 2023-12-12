@@ -1,0 +1,23 @@
+package com.example.myapplication.data_layer.network
+
+import com.example.myapplication.BuildConfig
+
+enum class BuildTypes{
+    debug,  release
+}
+
+const val TEST_URL = BuildConfig.TEST_APP_BASE_URL
+
+
+
+object AppBaseURLS {
+    val SERVER_BASE_URL = when (BuildConfig.BUILD_TYPE) {
+        BuildTypes.release.name -> {
+            BuildConfig.TEST_APP_BASE_URL
+        }
+
+        else -> {
+            BuildConfig.TEST_APP_BASE_URL
+        }
+    }
+}
