@@ -8,6 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentAboutCompanyBinding
+import com.example.myapplication.ui.profile.details.about_company.AboutCompanyFragmentDirections
 
 class AboutCompanyFragment :  BindingFragment<FragmentAboutCompanyBinding>(
     FragmentAboutCompanyBinding::inflate

@@ -9,9 +9,9 @@ import com.example.myapplication.R
 import com.example.myapplication.data_layer.model.TemporaryDataClassOneElement
 import com.example.myapplication.data_layer.model.TemporaryDataClassTwoElement
 import com.example.myapplication.databinding.FragmentHomePageBinding
-import com.example.myapplication.ui.home.adapters.HomePage1Adapter
-import com.example.myapplication.ui.home.adapters.NewPlacesAdapter
-import com.example.myapplication.ui.home.adapters.TopBrandsAdapter
+import com.example.myapplication.presentation_layer.ui.home.adapters.HomePage1Adapter
+import com.example.myapplication.presentation_layer.ui.home.adapters.NewPlacesAdapter
+import com.example.myapplication.presentation_layer.ui.home.adapters.TopBrandsAdapter
 
 
 class HomePageFragment : BindingFragment<FragmentHomePageBinding>(

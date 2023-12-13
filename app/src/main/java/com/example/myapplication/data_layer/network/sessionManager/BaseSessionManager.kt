@@ -13,5 +13,13 @@ interface BaseSessionManager {
         }
     }
 
+    fun getRefreshToken(): String{
+        return runBlocking {
+            pref.getRefreshToken()
+        }
+    }
+
+    fun refreshToken(refreshToken: String, oldAccessToken: String): String
+
     fun clearSessionData()
 }

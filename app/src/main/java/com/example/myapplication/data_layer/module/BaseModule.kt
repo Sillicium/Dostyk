@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import com.example.myapplication.BuildConfig
+import com.example.myapplication.data_layer.network.AppBaseURLS
 import com.example.myapplication.data_layer.network.TEST_URL
 import com.example.myapplication.data_layer.network.apiService.MainApiService
 import com.example.myapplication.data_layer.network.repo.TestRepository
@@ -81,7 +82,7 @@ object BaseModule {
     ): Retrofit {
         return Retrofit.Builder()
 //                TODO use ClientAppUrl
-            .baseUrl(TEST_URL)
+            .baseUrl(AppBaseURLS.SERVER_BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(okHttpClient)
             .build()

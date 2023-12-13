@@ -10,18 +10,18 @@ import com.example.myapplication.R
 import com.example.myapplication.data_layer.model.TemporaryDataClassWithList
 import com.example.myapplication.databinding.FragmentNotificationPageBinding
 import com.example.myapplication.presentation_layer.ui.history.HistoryPageFragment
-import com.example.myapplication.ui.profile.details.adapters.NotificationOuterAdapter
+import com.example.myapplication.presentation_layer.ui.profile.details.adapters.NotificationOuterAdapter
 
 class NotificationPageFragment : BindingFragment<FragmentNotificationPageBinding>(
     FragmentNotificationPageBinding::inflate
 ) {
 
     private val TwoElementAdaptersData = listOf(
-        R.string.notofication_page_date_title to listOf(com.example.myapplication.presentation_layer.ui.history.HistoryPageFragment().threeElement),
-        R.string.notofication_page_date_title to listOf(com.example.myapplication.presentation_layer.ui.history.HistoryPageFragment().threeElement),
-        R.string.notofication_page_date_title to listOf(com.example.myapplication.presentation_layer.ui.history.HistoryPageFragment().threeElement),
-        R.string.notofication_page_date_title to listOf(com.example.myapplication.presentation_layer.ui.history.HistoryPageFragment().threeElement),
-        R.string.notofication_page_date_title to listOf(com.example.myapplication.presentation_layer.ui.history.HistoryPageFragment().threeElement),
+        R.string.notofication_page_date_title to listOf(HistoryPageFragment().threeElement),
+        R.string.notofication_page_date_title to listOf(HistoryPageFragment().threeElement),
+        R.string.notofication_page_date_title to listOf(HistoryPageFragment().threeElement),
+        R.string.notofication_page_date_title to listOf(HistoryPageFragment().threeElement),
+        R.string.notofication_page_date_title to listOf(HistoryPageFragment().threeElement),
     ).map { TemporaryDataClassWithList(it.first, it.second) }
 
     override fun onCreateView(

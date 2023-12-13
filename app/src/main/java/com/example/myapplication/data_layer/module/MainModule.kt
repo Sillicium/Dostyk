@@ -1,7 +1,11 @@
 package com.example.myapplication.data_layer.module
 
+import com.example.myapplication.data_layer.interceptors.AuthInterceptorImpl
+import com.example.myapplication.data_layer.interceptors.BaseAuthInterceptor
 import com.example.myapplication.data_layer.network.AppBaseURLS
 import com.example.myapplication.data_layer.network.apiService.MainApiService
+import com.example.myapplication.data_layer.network.repo.MainRepository
+import com.example.myapplication.data_layer.network.repo.MainRepositoryImpl
 import com.example.myapplication.data_layer.network.sessionManager.auth.AuthenticationSessionManager
 import dagger.Module
 import dagger.Provides

@@ -8,8 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentOrderHistoryBinding
-import com.example.myapplication.presentation_layer.ui.history.HistoryPageFragment
-import com.example.myapplication.ui.history.PaymentHistoryAdapter
+import com.example.myapplication.presentation_layer.ui.history.PaymentHistoryAdapter
 
 
 class OrderHistoryFragment : BindingFragment<FragmentOrderHistoryBinding>(

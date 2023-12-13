@@ -8,7 +8,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentPaymentPageBinding
-import com.example.myapplication.ui.qr.dialog.ConfirmPaymentDialogFragment
+import com.example.myapplication.presentation_layer.ui.qr.dialog.ConfirmPaymentDialogFragment
 
 class PaymentPageFragment : BindingFragment<FragmentPaymentPageBinding>(
     FragmentPaymentPageBinding::inflate

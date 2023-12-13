@@ -7,8 +7,9 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.databinding.FragmentRestaurantDetailsBinding
-import com.example.myapplication.ui.home.HomePageFragment
-import com.example.myapplication.ui.restaurant.adapter.PartRestaurantsNewsAdapter
+import com.example.myapplication.presentation_layer.ui.home.HomePageFragment
+import com.example.myapplication.presentation_layer.ui.restaurant.adapter.PartRestaurantsNewsAdapter
+import com.example.myapplication.ui.restaurant.details.RestaurantDetailsFragmentDirections
 
 class RestaurantDetailsFragment : BindingFragment<FragmentRestaurantDetailsBinding>(
     FragmentRestaurantDetailsBinding::inflate
