@@ -10,7 +10,6 @@ import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentRestaurantNewsAndEventsBinding
 import com.example.myapplication.presentation_layer.ui.home.HomePageFragment
 import com.example.myapplication.presentation_layer.ui.restaurant.adapter.AllRestaurantNewsAdapter
-import com.example.myapplication.ui.restaurant.details.RestaurantNewsAndEventsFragmentDirections
 
 
 class RestaurantNewsAndEventsFragment : BindingFragment<FragmentRestaurantNewsAndEventsBinding>(

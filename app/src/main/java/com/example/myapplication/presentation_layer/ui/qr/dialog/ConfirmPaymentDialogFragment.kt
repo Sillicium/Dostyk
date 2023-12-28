@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentConfirmPaymentDialogBinding
+import com.example.myapplication.presentation_layer.ui.qr.PaymentPageFragmentDirections
 import com.example.myapplication.presentation_layer.ui.qr.dialog.ChoosePaymentMethodDialogFragment.Companion.changeBtnColor
-import com.example.myapplication.ui.qr.PaymentPageFragmentDirections
 import com.example.myapplication.presentation_layer.utils.fragment_utils.BaseBottomSheetDialog
 
 class ConfirmPaymentDialogFragment : BaseBottomSheetDialog<FragmentConfirmPaymentDialogBinding>(

@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/bottom_home"
-        android:name="com.example.myapplication.ui.home.HomePageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.home.HomePageFragment"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" />
 
     <fragment
         android:id="@+id/bottom_restaurant"
-        android:name="com.example.myapplication.ui.restaurant.RestaurantsPageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.restaurant.RestaurantsPageFragment"
         android:label="fragment_restaurants_page"
         tools:layout="@layout/fragment_restaurants_page" >
         <action
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/bottom_qr"
-        android:name="com.example.myapplication.ui.qr.QrPageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.qr.QrPageFragment"
         android:label="fragment_qr_page"
         tools:layout="@layout/fragment_qr_page" >
         <action
@@ -40,7 +40,7 @@
 
     <fragment
         android:id="@+id/bottom_profile"
-        android:name="com.example.myapplication.ui.profile.ProfilePageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.ProfilePageFragment"
         android:label="fragment_profile_page"
         tools:layout="@layout/fragment_profile_page" >
         <action
@@ -68,25 +68,25 @@
 
     <fragment
         android:id="@+id/notificationPageFragment"
-        android:name="com.example.myapplication.ui.profile.details.notification.NotificationPageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.notification.NotificationPageFragment"
         android:label="fragment_notification_page"
         tools:layout="@layout/fragment_notification_page" >
     </fragment>
     <fragment
         android:id="@+id/paymentMethodFragment"
-        android:name="com.example.myapplication.ui.profile.details.profile_user_data.PaymentMethodFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.profile_user_data.PaymentMethodFragment"
         android:label="fragment_payment_method"
         tools:layout="@layout/fragment_payment_method" >
     </fragment>
     <fragment
         android:id="@+id/orderHistoryFragment"
-        android:name="com.example.myapplication.ui.profile.details.profile_user_data.OrderHistoryFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.profile_user_data.OrderHistoryFragment"
         android:label="fragment_order_history"
         tools:layout="@layout/fragment_order_history" >
     </fragment>
     <fragment
         android:id="@+id/aboutCompanyFragment"
-        android:name="com.example.myapplication.ui.profile.details.about_company.AboutCompanyFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.about_company.AboutCompanyFragment"
         android:label="fragment_about_company"
         tools:layout="@layout/fragment_about_company" >
         <action
@@ -101,43 +101,43 @@
     </fragment>
     <fragment
         android:id="@+id/serviceFaqPageFragment"
-        android:name="com.example.myapplication.ui.profile.details.support.ServiceFaqPageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.support.ServiceFaqPageFragment"
         android:label="fragment_service_faq_page"
         tools:layout="@layout/fragment_service_faq_page" >
     </fragment>
     <fragment
         android:id="@+id/serviceSupportFragment"
-        android:name="com.example.myapplication.ui.profile.details.support.ServiceSupportFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.support.ServiceSupportFragment"
         android:label="fragment_service_support"
         tools:layout="@layout/fragment_service_support" >
     </fragment>
     <fragment
         android:id="@+id/userDataFragment"
-        android:name="com.example.myapplication.ui.profile.details.profile_user_data.UserDataFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.profile_user_data.UserDataFragment"
         android:label="fragment_user_data"
         tools:layout="@layout/fragment_user_data" >
     </fragment>
     <fragment
         android:id="@+id/aboutCompanyOfferPageFragment"
-        android:name="com.example.myapplication.ui.profile.details.about_company.AboutCompanyOfferPageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.about_company.AboutCompanyOfferPageFragment"
         android:label="fragment_about_company_offer_page"
         tools:layout="@layout/fragment_about_company_offer_page" >
     </fragment>
     <fragment
         android:id="@+id/aboutCompanyPrivacyPolicyFragment"
-        android:name="com.example.myapplication.ui.profile.details.about_company.AboutCompanyPrivacyPolicyFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.about_company.AboutCompanyPrivacyPolicyFragment"
         android:label="fragment_about_company_privacy_policy"
         tools:layout="@layout/fragment_about_company_privacy_policy" >
     </fragment>
     <fragment
         android:id="@+id/aboutCompanyUserAgreementFragment"
-        android:name="com.example.myapplication.ui.profile.details.about_company.AboutCompanyUserAgreementFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.profile.details.about_company.AboutCompanyUserAgreementFragment"
         android:label="fragment_about_company_user_agreement"
         tools:layout="@layout/fragment_about_company_user_agreement" >
     </fragment>
     <fragment
         android:id="@+id/restaurantDetailsFragment"
-        android:name="com.example.myapplication.ui.restaurant.details.RestaurantDetailsFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.restaurant.details.RestaurantDetailsFragment"
         android:label="fragment_restaurant_details"
         tools:layout="@layout/fragment_restaurant_details" >
         <action
@@ -149,7 +149,7 @@
     </fragment>
     <fragment
         android:id="@+id/paymentPageFragment"
-        android:name="com.example.myapplication.ui.qr.PaymentPageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.qr.PaymentPageFragment"
         android:label="fragment_payment_page"
         tools:layout="@layout/fragment_payment_page" >
         <action
@@ -158,7 +158,7 @@
     </fragment>
     <fragment
         android:id="@+id/paymentResultFragment"
-        android:name="com.example.myapplication.ui.qr.PaymentResultFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.qr.PaymentResultFragment"
         android:label="fragment_payment_result"
         tools:layout="@layout/fragment_payment_result" >
         <action
@@ -167,12 +167,12 @@
     </fragment>
     <fragment
         android:id="@+id/restaurantSuperEventFragment"
-        android:name="com.example.myapplication.ui.restaurant.details.RestaurantSuperEventFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.restaurant.details.RestaurantSuperEventFragment"
         android:label="fragment_restaurant_super_event"
         tools:layout="@layout/fragment_restaurant_super_event" />
     <fragment
         android:id="@+id/restaurantNewsAndEventsFragment"
-        android:name="com.example.myapplication.ui.restaurant.details.RestaurantNewsAndEventsFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.restaurant.details.RestaurantNewsAndEventsFragment"
         android:label="fragment_restaurant_news_and_events"
         tools:layout="@layout/fragment_restaurant_news_and_events" >
         <action

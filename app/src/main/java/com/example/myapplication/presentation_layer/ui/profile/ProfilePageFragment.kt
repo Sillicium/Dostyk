@@ -8,7 +8,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentProfilePageBinding
-import com.example.myapplication.ui.profile.ProfilePageFragmentDirections
 
 class ProfilePageFragment : BindingFragment<FragmentProfilePageBinding>(
     FragmentProfilePageBinding::inflate

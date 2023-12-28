@@ -4,11 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentChoosePaymentMethodDialogBinding
-import com.example.myapplication.ui.qr.PaymentPageFragmentDirections
 import com.example.myapplication.presentation_layer.utils.fragment_utils.BaseBottomSheetDialog
 
 class ChoosePaymentMethodDialogFragment : BaseBottomSheetDialog<FragmentChoosePaymentMethodDialogBinding>(
