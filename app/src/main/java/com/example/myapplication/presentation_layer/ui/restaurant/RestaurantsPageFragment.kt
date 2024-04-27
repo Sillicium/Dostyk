@@ -13,7 +13,7 @@ class RestaurantsPageFragment : BindingFragment<FragmentRestaurantsPageBinding>(
     FragmentRestaurantsPageBinding::inflate
 ) {
 
-    val viewModel: RestaurantsPageViewModel by activityViewModels()
+//    val viewModel: RestaurantsPageViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +41,7 @@ class RestaurantsPageFragment : BindingFragment<FragmentRestaurantsPageBinding>(
         binding.placeholder.setOnClickListener {
             val directions = RestaurantsPageFragmentDirections.actionBottomRestaurantToRestaurantDetailsFragment()
             findNavController().navigate(directions)
-            viewModel.getBranchId()
+//            viewModel.getBranchId()
         }
     }
 }
