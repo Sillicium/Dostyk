@@ -17,6 +17,8 @@
     <string name="btn_pay">Оплатить</string>
     <string name="btn_g_pay">Google pay</string>
     <string name="btn_continue">Продолжить</string>
+    <string name="btn_sign_in">Войти</string>
+    <string name="btn_sign_up">Зарегистрироваться</string>
 
     <!--   Page Texts-->
     <string name="user_cards">Мои карты</string>
@@ -53,7 +55,6 @@
     <string name="about_company_page_offer">Оферта</string>
 
     <string name="about_company_page_privacy_policy">Политика конфиденциальности</string>
-
 
 
     <!--    Add Card Bottom sheet-->
