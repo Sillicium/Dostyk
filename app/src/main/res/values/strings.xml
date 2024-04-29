@@ -19,6 +19,9 @@
     <string name="btn_continue">Продолжить</string>
     <string name="btn_sign_in">Войти</string>
     <string name="btn_sign_up">Зарегистрироваться</string>
+    <string name="btn_sign_up_title">Регистрация</string>
+    <string name="e_mail_text">E-Mail</string>
+    <string name="password_text">Password</string>
 
     <!--   Page Texts-->
     <string name="user_cards">Мои карты</string>
