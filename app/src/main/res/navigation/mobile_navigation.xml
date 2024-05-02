@@ -9,7 +9,11 @@
         android:id="@+id/bottom_home"
         android:name="com.example.myapplication.presentation_layer.ui.home.HomePageFragment"
         android:label="fragment_home_page"
-        tools:layout="@layout/fragment_home_page" />
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_bottom_home_to_registrationsPageFragment"
+            app:destination="@id/registrationsPageFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/bottom_restaurant"
@@ -179,5 +183,26 @@
             android:id="@+id/action_restaurantNewsAndEventsFragment_to_restaurantSuperEventFragment"
             app:destination="@id/restaurantSuperEventFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/registrationsPageFragment"
+        android:name="com.example.myapplication.presentation_layer.ui.registration.RegistrationsPageFragment"
+        android:label="fragment_registration_page"
+        tools:layout="@layout/fragment_registration_page" />
+    <dialog
+        android:id="@+id/dialogSignInPage"
+        android:name="com.example.myapplication.presentation_layer.ui.registration.DialogSignInPageFragment"
+        android:label="DialogSignInPage" >
+        <action
+            android:id="@+id/action_dialogSignInPage_to_bottom_home"
+            app:destination="@id/bottom_home" />
+    </dialog>
+    <dialog
+        android:id="@+id/dialogSignUpPage"
+        android:name="com.example.myapplication.presentation_layer.ui.registration.DialogSignUpPageFragment"
+        android:label="DialogSignUpPage" >
+        <action
+            android:id="@+id/action_dialogSignUpPage_to_bottom_home"
+            app:destination="@id/bottom_home" />
+    </dialog>
 
 </navigation>

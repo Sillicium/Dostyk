@@ -1,4 +1,3 @@
-import com.android.tools.r8.internal.QA
 
 plugins {
     id("com.android.application")

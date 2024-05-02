@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.data_layer.model.TemporaryDataClassOneElement
@@ -12,6 +13,8 @@ import com.example.myapplication.databinding.FragmentHomePageBinding
 import com.example.myapplication.presentation_layer.ui.home.adapters.HomePage1Adapter
 import com.example.myapplication.presentation_layer.ui.home.adapters.NewPlacesAdapter
 import com.example.myapplication.presentation_layer.ui.home.adapters.TopBrandsAdapter
+import com.example.myapplication.presentation_layer.ui.registration.RegistrationsPageFragment
+import com.example.myapplication.presentation_layer.ui.registration.RegistrationsPageFragment.Companion.needShowRegistrationPage
 
 
 class HomePageFragment : BindingFragment<FragmentHomePageBinding>(
@@ -45,7 +48,11 @@ class HomePageFragment : BindingFragment<FragmentHomePageBinding>(
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
 
-        setupFragment()
+        if (needShowRegistrationPage){
+            findNavController().navigate(HomePageFragmentDirections.actionBottomHomeToRegistrationsPageFragment())
+        }else{
+            setupFragment()
+        }
 
         return binding.root
     }

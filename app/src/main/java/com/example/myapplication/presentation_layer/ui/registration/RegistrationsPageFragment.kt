@@ -1,15 +1,11 @@
 package com.example.myapplication.presentation_layer.ui.registration
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
-import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentRegistrationPageBinding
-import com.example.myapplication.presentation_layer.ui.restaurant.RestaurantsPageFragmentDirections
 
 class RegistrationsPageFragment : BindingFragment<FragmentRegistrationPageBinding>(
     FragmentRegistrationPageBinding::inflate
@@ -22,6 +18,8 @@ class RegistrationsPageFragment : BindingFragment<FragmentRegistrationPageBindin
     ): View {
         super.onCreateView(inflater, container, savedInstanceState)
 
+        needShowRegistrationPage = false
+
         setupFragment()
 
         return binding.root
@@ -29,17 +27,21 @@ class RegistrationsPageFragment : BindingFragment<FragmentRegistrationPageBindin
 
     private fun setupFragment(){
 
-        setupView()
-
         setupBtn()
     }
 
-    private fun setupView(){
-
-    }
-
     private fun setupBtn(){
-
+        binding.btnSignIn.setOnClickListener {
+            DialogSignInPageFragment().show(childFragmentManager, DialogSignInPageFragment.TAG)
+        }
+        binding.btnSignUp.setOnClickListener {
+            DialogSignUpPageFragment().show(childFragmentManager, DialogSignInPageFragment.TAG)
+        }
     }
+
+    companion object{
+        var needShowRegistrationPage = true
+    }
+
 
 }

@@ -8,6 +8,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.dostyk.utils.fragment_utils.BindingFragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentProfilePageBinding
+import com.example.myapplication.presentation_layer.ui.registration.DialogSignUpPageFragment
+import com.example.myapplication.presentation_layer.ui.registration.DialogSignUpPageFragment.Companion.e_mail_text
 
 class ProfilePageFragment : BindingFragment<FragmentProfilePageBinding>(
     FragmentProfilePageBinding::inflate
@@ -33,6 +35,8 @@ class ProfilePageFragment : BindingFragment<FragmentProfilePageBinding>(
 
     private fun setupViews(){
         setupUserData()
+
+        binding.profilePageTitle.tvProfileUserName.text = e_mail_text
 
         binding.orderHistoryTab.ivTabIcon.setImageResource(R.drawable.ic_bag)
         binding.orderHistoryTab.tvTabDescription.setText(R.string.order_history)

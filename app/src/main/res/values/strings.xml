@@ -29,6 +29,10 @@
     <string name="user_main_card">Основная карта</string>
     <string name="payment_via_qr">Оплата QR</string>
 
+    <!--   Toast Texts-->
+    <string name="text_is_blank">Заполните все поля</string>
+    <string name="text_email_or_password_wrong">Логин или пароль были введены неверно</string>
+
 
     <!--    Profile Page-->
     <string name="user_name_example">Алдияр</string>
