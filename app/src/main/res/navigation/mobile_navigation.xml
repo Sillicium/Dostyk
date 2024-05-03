@@ -187,22 +187,10 @@
         android:id="@+id/registrationsPageFragment"
         android:name="com.example.myapplication.presentation_layer.ui.registration.RegistrationsPageFragment"
         android:label="fragment_registration_page"
-        tools:layout="@layout/fragment_registration_page" />
-    <dialog
-        android:id="@+id/dialogSignInPage"
-        android:name="com.example.myapplication.presentation_layer.ui.registration.DialogSignInPageFragment"
-        android:label="DialogSignInPage" >
+        tools:layout="@layout/fragment_registration_page" >
         <action
-            android:id="@+id/action_dialogSignInPage_to_bottom_home"
+            android:id="@+id/action_registrationsPageFragment_to_bottom_home"
             app:destination="@id/bottom_home" />
-    </dialog>
-    <dialog
-        android:id="@+id/dialogSignUpPage"
-        android:name="com.example.myapplication.presentation_layer.ui.registration.DialogSignUpPageFragment"
-        android:label="DialogSignUpPage" >
-        <action
-            android:id="@+id/action_dialogSignUpPage_to_bottom_home"
-            app:destination="@id/bottom_home" />
-    </dialog>
+    </fragment>
 
 </navigation>

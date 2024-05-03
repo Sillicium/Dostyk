@@ -1,6 +1,8 @@
 package com.example.myapplication.presentation_layer.ui.registration
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,9 +37,29 @@ class DialogSignInPageFragment: BaseBottomSheetDialog<DialogSignInPageBinding>(
 
     private fun setupView(){
 
-        emailEditText = binding.eMailEditText.text.toString()
+        binding.eMailEditText.addTextChangedListener(object: TextWatcher {
+            override fun afterTextChanged(p0: Editable?) {
+                emailEditText = binding.eMailEditText.text.toString()
+            }
 
-        passwordEditText = binding.passwordEditText.text.toString()
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+        })
+
+        binding.passwordEditText.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+                passwordEditText = binding.passwordEditText.text.toString()
+            }
+
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            }
+        })
 
         setupBtn(emailEditText, passwordEditText)
     }
@@ -45,7 +67,7 @@ class DialogSignInPageFragment: BaseBottomSheetDialog<DialogSignInPageBinding>(
     private fun setupBtn(email: String, password: String){
         binding.btnSignIn.setOnClickListener {
             if (email == e_mail_text && password == password_text){
-                findNavController().navigate(DialogSignInPageFragmentDirections.actionDialogSignInPageToBottomHome())
+                findNavController().navigate(RegistrationsPageFragmentDirections.actionRegistrationsPageFragmentToBottomHome())
             }else{
                 Toast.makeText(requireContext(), getString(R.string.text_email_or_password_wrong), Toast.LENGTH_SHORT).show()
             }
